@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BS Task-5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="p-4 bg-secondary-subtle">
+    <form class="row gx-5 gy-4 needs-validation was-validated" novalidate="">
+      <div class="col-2 text-end">
+        <h6 class="form-label">First Name</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text p-0 px-1" id="inputGroupPrepend"
+            ><img class="rounded-start-2" style="width: 40px" src="person.jpg"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            required=""
+          />
+          <div class="invalid-feedback">Please supply a first name</div>
+        </div>
+      </div>
+      <div class="col-2 text-end">
+        <h6 class="form-label">Last Name</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text p-0 px-1" id="inputGroupPrepend"
+            ><img class="rounded-start-2" style="width: 40px" src="person.jpg"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            required=""
+          />
+          <div class="invalid-feedback">Please supply a last name</div>
+        </div>
+      </div>
+      <div class="col-2 text-end">
+        <h6 class="form-label">E-Mail</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"
+            ><img style="width: 20px" src="mail.jpeg"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="E-Mail Address"
+            required=""
+          />
+          <div class="invalid-feedback">Please supply your email address</div>
+        </div>
+      </div>
+      <div class="col-2 text-end">
+        <h6 class="form-label">Phone #</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text p-0 px-1" id="inputGroupPrepend"
+            ><img class="rounded-start-2" style="width: 40px" src="phone.jpg"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="(845)555-1212"
+            required=""
+          />
+          <div class="invalid-feedback">Please supply your phone number</div>
+        </div>
+      </div>
+      <div class="col-2 text-end">
+        <h6 class="form-label">Address</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"
+            ><img class="rounded-start-2" style="width: 20px" src="home.png"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Address"
+            required=""
+          />
+          <div class="invalid-feedback">Please supply your street address</div>
+        </div>
+      </div>
+      <div class="col-2 text-end">
+        <h6 class="form-label">City</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"
+            ><img class="rounded-start-2" style="width: 20px" src="home.png"
+          /></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="city"
+            required=""
+          />
+          <div class="invalid-feedback">Please supply your city</div>
+        </div>
+      </div>
+      <div class="col-2 text-end">
+        <h6 class="form-label">State</h6>
+      </div>
+      <div class="col-10">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"
+            ><img style="width: 20px" src="list.svg"
+          /></span>
+          <select class="form-select" id="validationCustom04" required="">
+            <option selected="" disabled="" value="">
+              Please select your state
+            </option>
+            <option>Tamil Nadu</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Maharashtra</option>
+            <option>Others</option>
+          </select>
+          <div class="invalid-feedback">Please supply your state</div>
+        </div>
+      </div>
+      <div class="col-3 text-end">
+        <h6 class="form-label">Do you have hosting?</h6>
+      </div>
+      <div class="col-9">
+        <div class="form-check has-validation">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="hosting"
+            required
+          />
+          <label class="form-check-label" for="validationFormCheck2">Yes</label>
+        </div>
+        <div class="form-check has-validation">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="hosting"
+            required
+          />
+          <label class="form-check-label" for="validationFormCheck3">No</label>
+          <div class="invalid-feedback">Please select one</div>
+        </div>
+      </div>
+      <div class="col-3 text-end">
+        <h6 class="form-label">Project Description</h6>
+      </div>
+      <div class="col-9">
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend"
+            ><img style="width: 30px" src="pencil.webp"
+          /></span>
+          <textarea
+            class="form-control"
+            id=""
+            cols="30"
+            rows="3"
+            required=""
+            placeholder="Project Description"
+          ></textarea>
+          <div class="invalid-feedback">
+            Please supply your project description
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-end"></div>
+      <div class="col-9">
+        <button class="btn btn-warning" type="submit">
+          Send <img src="plane.jpg" style="width: 30px" />
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

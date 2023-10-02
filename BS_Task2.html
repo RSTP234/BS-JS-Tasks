@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BS Task-2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid bg-warning px-5">
+      <div class="p-1 ps-0">
+        <div class="row">
+          <div class="col-3">
+            <h1 class="fw-bolder text-black">Builderz</h1>
+          </div>
+          <div class="col-1">
+            <img src="calendar clock.jpg" class="w-100" />
+          </div>
+          <div class="col-2">
+            <label class="fw-medium">Opening Hour</label><br />
+            <label>Mon-Fri, 8:00 - 9:00</label>
+          </div>
+          <div class="col-1">
+            <img src="call.jpg" class="w-50 float-end" />
+          </div>
+          <div class="col-2">
+            <label class="fw-medium">Call Us</label><br />
+            <label>+012 345 6789</label>
+          </div>
+          <div class="col-1">
+            <img src="mail.jpg" class="w-75 float-end" />
+          </div>
+          <div class="col-2">
+            <label class="fw-medium">Email Us</label><br />
+            <label>info@example.com</label>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm p-0">
+        <div class="container-fluid bg-black p-3">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-warning" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">PROJECT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >PAGES</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">ACTION</a>
+                <a class="dropdown-item" href="#tab3Id">ANOTHER</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">ACTION</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">CONTACT</a>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end">
+            <li>
+              <button class="btn btn-outline-light rounded-0">
+                Get a Quote
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner bg-black">
+        <div class="carousel-item active">
+          <img src="builder.jpg" class="d-block w-100 opacity-75" />
+          <div class="carousel-caption pb-5 mb-5">
+            <label class="fs-4">We are professional</label>
+            <p class="fs-1 fw-bolder">For Your Dream Project</p>
+            <button
+              type="button"
+              class="btn btn-outline-light rounded-0 px-4 py-2"
+            >
+              GET A QUOTE
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="builder.jpg" class="d-block w-100 opacity-75" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="builder.jpg" class="d-block w-100 opacity-75" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-black text-warning">
+          <div class="d-inline-flex w-25 me-4">
+            <img src="worker.jpg" class="w-100" />
+          </div>
+          <div class="d-inline-block w-50 pt-5">
+            <h3>Expert Worker</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              numquam ex quisquam
+            </p>
+          </div>
+        </div>
+        <div class="col bg-warning text-black">
+          <div class="d-inline-flex w-25 me-4">
+            <img src="building.jpg" class="w-100" />
+          </div>
+          <div class="d-inline-block w-50 pt-5">
+            <h3>Quality Work</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              numquam ex quisquam
+            </p>
+          </div>
+        </div>
+        <div class="col bg-black text-warning py-5">
+          <div class="d-inline-flex w-25 me-4">
+            <img src="support.jpg" class="w-75" />
+          </div>
+          <div class="d-inline-block w-50">
+            <h3>24/7 Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              numquam ex quisquam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

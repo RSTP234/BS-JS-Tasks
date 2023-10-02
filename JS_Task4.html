@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task-4</title>
+  </head>
+  <body>
+    <button onclick="date()">show date</button>
+    <p id="date"></p>
+    <button onclick="time()">show Time</button>
+    <p id="time"></p>
+    <script>
+      const month = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      function date() {
+        const d = new Date();
+        document.getElementById("date").innerHTML =
+          d.getDate() + "/" + month[d.getMonth()] + "/" + d.getFullYear();
+      }
+
+      const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+      const months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+      function time() {
+        const d = new Date();
+        document.getElementById("time").innerHTML =
+          day[d.getDay()] +
+          " " +
+          months[d.getMonth()] +
+          " " +
+          d.getDate() +
+          " " +
+          d.getFullYear() +
+          " " +
+          d.getHours() +
+          ":" +
+          d.getMinutes() +
+          ":" +
+          d.getSeconds() +
+          " GMT+0530 (India Standard Time)";
+      }
+    </script>
+  </body>
+</html>

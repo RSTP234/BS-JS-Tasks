@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task-8</title>
+    <style>
+      body {
+        background: linear-gradient(tan, wheat, mistyrose, pink, plum, fuchsia);
+      }
+      table {
+        width: 100%;
+      }
+      th {
+        width: 15%;
+        text-align: end;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+      input {
+        width: 99%;
+      }
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+      textarea {
+        width: 99%;
+      }
+      button {
+        display: block;
+        margin: auto;
+        border-radius: 40%;
+        padding: 5px;
+        font-size: 125%;
+        color: white;
+        background-color: red;
+        font-weight: bold;
+      }
+      .error {
+        color: red;
+      }
+      .ip {
+        width: 70%;
+      }
+      /* th{
+            width:10%;
+        } */
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <td class="ip"><input type="text" id="fname" onchange="fname()" /></td>
+        <td class="error" id="errfname"></td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td class="ip"><input type="text" id="lname" onchange="lname()" /></td>
+        <td class="error" id="errlname"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td class="ip"><input type="email" id="mail" onchange="mail()" /></td>
+        <td class="error" id="errmail"></td>
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="ip"><input type="password" id="pwd" onchange="pwd()" /></td>
+        <td class="error" id="errpwd"></td>
+      </tr>
+      <tr>
+        <th>Re-enter Password</th>
+        <td class="ip">
+          <input type="password" id="cnfpwd" onchange="cnfpwd()" />
+        </td>
+        <td class="error" id="errcnfpwd"></td>
+      </tr>
+      <tr>
+        <th rowspan="2">Gender</th>
+        <td>
+          <input name="Gender" type="radio" style="width: auto" />
+          <label>Male</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="Gender" style="width: auto" />
+          <label>Female</label>
+        </td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td class="ip"><input type="number" id="age" onchange="age()" /></td>
+        <td class="error" id="errage"></td>
+      </tr>
+      <tr>
+        <th>Phone Number</th>
+        <td class="ip"><input type="tel" id="phno" onchange="phno()" /></td>
+        <td class="error" id="errphno"></td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td class="ip">
+          <textarea rows="5" id="addr" onchange="addr()"></textarea>
+        </td>
+        <td class="error" id="erraddr"></td>
+      </tr>
+      <tr>
+        <th>State</th>
+        <td class="ip"><input type="text" id="state" onchange="state()" /></td>
+        <td class="error" id="errstate"></td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td>
+          <select>
+            <option>Choose your Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Germany">Germany</option>
+            <option value="Others">Others</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Languages known</th>
+        <td>
+          <input type="checkbox" style="width: auto" />
+          <label>English</label>
+          <input type="checkbox" style="width: auto" />
+          <label>Kannada</label>
+          <input type="checkbox" style="width: auto" />
+          <label>Hindi</label>
+          <input type="checkbox" style="width: auto" />
+          <label>Telugu</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" style="width: auto" />
+          <label>Hereby I declare all the details are true</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: right">
+          Log in to
+          <a href="https://ethnus.com/" target="_blank">Ethnus</a> Website
+        </td>
+      </tr>
+    </table>
+    <br />
+    <button onclick="eval()">REGISTER</button>
+
+    <script>
+      function fname() {
+        if (document.getElementById("fname").value == "") {
+          document.getElementById("errfname").innerHTML = "POOR";
+        } else {
+          document.getElementById("errfname").innerHTML = "";
+        }
+      }
+
+      function lname() {
+        if (document.getElementById("lname").value == "") {
+          document.getElementById("errlname").innerHTML = "POOR";
+        } else {
+          document.getElementById("errlname").innerHTML = "";
+        }
+      }
+
+      function mail() {
+        if (document.getElementById("mail").value == "") {
+          document.getElementById("errmail").innerHTML = "POOR";
+        } else {
+          document.getElementById("errmail").innerHTML = "";
+        }
+      }
+
+      function pwd() {
+        if (document.getElementById("pwd").value == "") {
+          document.getElementById("errpwd").innerHTML = "POOR";
+        } else {
+          document.getElementById("errpwd").innerHTML = "";
+        }
+        cnfpwd();
+      }
+
+      function cnfpwd() {
+        if (
+          document.getElementById("cnfpwd").value == "" ||
+          document.getElementById("cnfpwd").value !=
+            document.getElementById("pwd").value
+        ) {
+          document.getElementById("errcnfpwd").innerHTML = "POOR OR MISMATCH";
+        } else {
+          document.getElementById("errcnfpwd").innerHTML = "";
+        }
+      }
+
+      function age() {
+        if (document.getElementById("age").value == "") {
+          document.getElementById("errage").innerHTML = "POOR";
+        } else {
+          document.getElementById("errage").innerHTML = "";
+        }
+      }
+
+      function phno() {
+        if (document.getElementById("phno").value == "") {
+          document.getElementById("errphno").innerHTML = "POOR";
+        } else {
+          document.getElementById("errphno").innerHTML = "";
+        }
+      }
+
+      function addr() {
+        if (document.getElementById("addr").value == "") {
+          document.getElementById("erraddr").innerHTML = "POOR";
+        } else {
+          document.getElementById("erraddr").innerHTML = "";
+        }
+      }
+
+      function state() {
+        if (document.getElementById("state").value == "") {
+          document.getElementById("errstate").innerHTML = "POOR";
+        } else {
+          document.getElementById("errstate").innerHTML = "";
+        }
+      }
+
+      function eval() {
+        fname();
+        lname();
+        mail();
+        pwd();
+        age();
+        phno();
+        addr();
+        state();
+      }
+    </script>
+  </body>
+</html>

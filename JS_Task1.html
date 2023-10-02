@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task-1</title>
+  </head>
+  <body>
+    <script>
+      function revano(x) {
+        let n = 0;
+        while (x > 0) {
+          n = n * 10 + (x % 10);
+          x = (x - (x % 10)) / 10;
+        }
+        console.log(n);
+        document.write("<h1>" + n + "</h1>");
+      }
+      revano(32243);
+    </script>
+  </body>
+</html>
